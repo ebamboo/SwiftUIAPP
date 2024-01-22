@@ -1,0 +1,17 @@
+//
+//  SwiftUIAPPApp.swift
+//  SwiftUIAPP
+//
+//  Created by ebamboo on 2024/1/22.
+//
+
+import SwiftUI
+
+@main
+struct SwiftUIAPPApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
