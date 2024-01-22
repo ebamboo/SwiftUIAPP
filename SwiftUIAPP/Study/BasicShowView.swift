@@ -17,9 +17,11 @@ struct BasicShowView: View {
                 Text("基本显示")
             }.frame(height: 44)
             Divider()
+            
             List(itemList, id: \.self) { item in
                 Text(item)
             }
+            
             Divider()
         }
     }

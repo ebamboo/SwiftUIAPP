@@ -12,8 +12,7 @@ struct MultiPickerView: View {
     let itemList = [
         ["开关按钮", "离散加减", "连续加减"],
         ["日期选择", "颜色选择", "图片选择"],
-        ["单项选择"],
-        ["模态单选", "模态多选"],
+        ["单项选择", "自定义Menu选择"],
     ]
     
     var body: some View {

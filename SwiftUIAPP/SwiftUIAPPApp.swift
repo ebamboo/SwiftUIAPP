@@ -12,7 +12,7 @@ struct SwiftUIAPPApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-                .ignoresSafeArea()
+                .ignoresSafeArea() // 占用全屏幕尺寸
         }
     }
 }
