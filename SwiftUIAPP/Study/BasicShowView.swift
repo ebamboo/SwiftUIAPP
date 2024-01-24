@@ -13,9 +13,6 @@ private let url3 = URL(string: "https://gitee.com/ebamboo/Assets/raw/master/BBPi
 
 struct BasicShowView: View {
     
-    let itemList = ["文字", "图片", "Label", "按钮", "形状"]
-    
-    
     var textView: some View {
         Section {
             Text("简单设置")
@@ -39,6 +36,17 @@ struct BasicShowView: View {
                         .aspectRatio(contentMode: .fill)
                 }
                 .clipped()
+            
+            Text("背景设置为渐变色")
+                .font(Font.system(size: 28))
+                .multilineTextAlignment(.trailing) // 多行文字对齐
+                .background { // 线性渐变色
+                    LinearGradient.linearGradient(
+                        colors: [.red, .blue],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                }
             
             Text("设置边框")
                 .padding()

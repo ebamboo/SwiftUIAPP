@@ -11,7 +11,7 @@ struct StudyView: View {
     
     let infoList: [(title: String, itemList: [String])] = [
         (title: "基础组件", itemList: [
-            "基本显示", "文字输入", "多功能选择"
+            "基本显示组件", "文字输入", "多功能选择"
         ]),
         (title: "基础布局", itemList: [
             "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
