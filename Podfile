@@ -12,6 +12,7 @@ target 'SwiftUIAPP' do
   pod 'FSPagerView'
   pod 'TZImagePickerController'
   pod 'BRPickerView'
+  pod 'UITextView+Placeholder'
 
 end
 

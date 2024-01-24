@@ -22,6 +22,7 @@ PODS:
     - TZImagePickerController/Location (= 3.8.4)
   - TZImagePickerController/Basic (3.8.4)
   - TZImagePickerController/Location (3.8.4)
+  - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
   - Alamofire
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - KakaJSON
   - SDWebImage
   - TZImagePickerController
+  - "UITextView+Placeholder"
 
 SPEC REPOS:
   trunk:
@@ -39,6 +41,7 @@ SPEC REPOS:
     - KakaJSON
     - SDWebImage
     - TZImagePickerController
+    - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
@@ -47,7 +50,8 @@ SPEC CHECKSUMS:
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   SDWebImage: f9258c58221ed854cfa0e2b80ee4033710b1c6d3
   TZImagePickerController: f1c9f1cae6ac0e30b31aaa9698f9bf4a7cf5b84f
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: abcaa94311c0bf3b61a64efef213969d73052ae2
+PODFILE CHECKSUM: 61150570fba15b40801554ced106ba1350d6c5e8
 
 COCOAPODS: 1.12.1
