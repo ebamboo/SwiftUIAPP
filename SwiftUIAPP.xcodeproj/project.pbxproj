@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32DE1EDCDF1C219873390159 /* Pods_SwiftUIAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F2991E9CEE321FD4C849 /* Pods_SwiftUIAPP.framework */; };
 		AD02841A2B5E597900382CC0 /* SwiftUIAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0284192B5E597900382CC0 /* SwiftUIAPPApp.swift */; };
 		AD02841C2B5E597900382CC0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02841B2B5E597900382CC0 /* RootView.swift */; };
 		AD02841E2B5E597A00382CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD02841D2B5E597A00382CC0 /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0284322B5E741A00382CC0 /* TextInputView.swift */; };
 		AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0284342B5E742B00382CC0 /* MultiPickerView.swift */; };
 		AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871A2B5FE78B00FD7360 /* Adaption.swift */; };
+		AD08871D2B60A9A700FD7360 /* BridgeUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871C2B60A9A700FD7360 /* BridgeUIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A1740B91CC85139A02391E4 /* Pods-SwiftUIAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAPP.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIAPP/Pods-SwiftUIAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		6B75F2991E9CEE321FD4C849 /* Pods_SwiftUIAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81419894E681E6C2F280A307 /* Pods-SwiftUIAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAPP.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIAPP/Pods-SwiftUIAPP.release.xcconfig"; sourceTree = "<group>"; };
 		AD0284162B5E597900382CC0 /* SwiftUIAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0284192B5E597900382CC0 /* SwiftUIAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAPPApp.swift; sourceTree = "<group>"; };
 		AD02841B2B5E597900382CC0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		AD0284322B5E741A00382CC0 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		AD0284342B5E742B00382CC0 /* MultiPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPickerView.swift; sourceTree = "<group>"; };
 		AD08871A2B5FE78B00FD7360 /* Adaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaption.swift; sourceTree = "<group>"; };
+		AD08871C2B60A9A700FD7360 /* BridgeUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DE1EDCDF1C219873390159 /* Pods_SwiftUIAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0343C42F797651B9EC35D22B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F2991E9CEE321FD4C849 /* Pods_SwiftUIAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD02840D2B5E597900382CC0 = {
 			isa = PBXGroup;
 			children = (
 				AD0284182B5E597900382CC0 /* SwiftUIAPP */,
 				AD0284172B5E597900382CC0 /* Products */,
+				D9FC41A48C1553532748EEF4 /* Pods */,
+				0343C42F797651B9EC35D22B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +82,7 @@
 				AD0284272B5E5A2E00382CC0 /* Info.plist */,
 				AD0284192B5E597900382CC0 /* SwiftUIAPPApp.swift */,
 				AD02841B2B5E597900382CC0 /* RootView.swift */,
+				AD08871C2B60A9A700FD7360 /* BridgeUIKit.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
 				AD0284282B5E61CD00382CC0 /* Study */,
 				AD02842B2B5E61F800382CC0 /* Experience */,
@@ -92,6 +110,15 @@
 			path = Experience;
 			sourceTree = "<group>";
 		};
+		D9FC41A48C1553532748EEF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A1740B91CC85139A02391E4 /* Pods-SwiftUIAPP.debug.xcconfig */,
+				81419894E681E6C2F280A307 /* Pods-SwiftUIAPP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD0284242B5E597A00382CC0 /* Build configuration list for PBXNativeTarget "SwiftUIAPP" */;
 			buildPhases = (
+				B3332C96D3A50A10C8D1EC7B /* [CP] Check Pods Manifest.lock */,
 				AD0284122B5E597900382CC0 /* Sources */,
 				AD0284132B5E597900382CC0 /* Frameworks */,
 				AD0284142B5E597900382CC0 /* Resources */,
+				3050F36D225658546FCBEB25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +185,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3050F36D225658546FCBEB25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAPP/Pods-SwiftUIAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAPP/Pods-SwiftUIAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAPP/Pods-SwiftUIAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3332C96D3A50A10C8D1EC7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD0284122B5E597900382CC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -163,6 +234,7 @@
 			files = (
 				AD02841C2B5E597900382CC0 /* RootView.swift in Sources */,
 				AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */,
+				AD08871D2B60A9A700FD7360 /* BridgeUIKit.swift in Sources */,
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
@@ -212,7 +284,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -275,7 +347,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -296,6 +368,7 @@
 		};
 		AD0284252B5E597A00382CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1740B91CC85139A02391E4 /* Pods-SwiftUIAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +398,7 @@
 		};
 		AD0284262B5E597A00382CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81419894E681E6C2F280A307 /* Pods-SwiftUIAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

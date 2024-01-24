@@ -276,7 +276,7 @@ struct BasicShowView: View {
                 }
             
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.white)
+                .stroke(.gray, lineWidth: 2)
                 .frame(width: 200, height: 128)
                 .overlay {
                     Text("圆角矩形")

@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (5.8.1)
+  - BRPickerView (2.8.1):
+    - BRPickerView/AddressPickerView (= 2.8.1)
+    - BRPickerView/Base (= 2.8.1)
+    - BRPickerView/DatePickerView (= 2.8.1)
+    - BRPickerView/StringPickerView (= 2.8.1)
+  - BRPickerView/AddressPickerView (2.8.1):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.8.1)
+  - BRPickerView/DatePickerView (2.8.1):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.8.1):
+    - BRPickerView/Base
+  - FSPagerView (0.8.3)
+  - KakaJSON (1.1.2)
+  - SDWebImage (5.18.7):
+    - SDWebImage/Core (= 5.18.7)
+  - SDWebImage/Core (5.18.7)
+  - TZImagePickerController (3.8.4):
+    - TZImagePickerController/Basic (= 3.8.4)
+    - TZImagePickerController/Location (= 3.8.4)
+  - TZImagePickerController/Basic (3.8.4)
+  - TZImagePickerController/Location (3.8.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - BRPickerView
+  - FSPagerView
+  - KakaJSON
+  - SDWebImage
+  - TZImagePickerController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BRPickerView
+    - FSPagerView
+    - KakaJSON
+    - SDWebImage
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  BRPickerView: 2531a2d4d0fea0b57a1c738de215af0f88863a2f
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
+  SDWebImage: f9258c58221ed854cfa0e2b80ee4033710b1c6d3
+  TZImagePickerController: f1c9f1cae6ac0e30b31aaa9698f9bf4a7cf5b84f
+
+PODFILE CHECKSUM: abcaa94311c0bf3b61a64efef213969d73052ae2
+
+COCOAPODS: 1.12.1
