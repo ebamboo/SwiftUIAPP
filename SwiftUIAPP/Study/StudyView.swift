@@ -14,7 +14,7 @@ struct StudyView: View {
             "基本显示组件", "文字输入", "多功能选择"
         ]),
         (title: "基础布局", itemList: [
-            "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
+            "padding\nSpacer", "item alignment\nframe alignment\nalignmentGuide", "geometry"
         ]),
         (title: "组织和跳转", itemList: [
             "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
@@ -53,6 +53,7 @@ struct StudyView: View {
     }
     
     @ViewBuilder func destinationView(section: Int, row: Int) -> some View {
+        
         switch (section, row) {
         case (0, 0):
             BasicShowView()
@@ -60,9 +61,18 @@ struct StudyView: View {
             TextInputView()
         case (0, 2):
             MultiPickerView()
+            
+        case (1, 0):
+            PaddingView()
+        case (1, 1):
+            AlignmentView()
+        case (1, 2):
+            GeometryView()
+            
         default:
             EmptyView()
         }
+        
     }
     
 }

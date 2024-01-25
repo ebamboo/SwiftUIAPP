@@ -21,6 +21,9 @@
 		AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871E2B60AF2300FD7360 /* TestView.swift */; };
 		AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85606E2B620225000798B3 /* PresentDatePicker.swift */; };
 		AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560702B622B8B000798B3 /* ImagePickerPage.swift */; };
+		AD8560732B625A62000798B3 /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560722B625A62000798B3 /* PaddingView.swift */; };
+		AD8560752B625A6F000798B3 /* AlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560742B625A6F000798B3 /* AlignmentView.swift */; };
+		AD8560772B625A79000798B3 /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560762B625A79000798B3 /* GeometryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		AD08871E2B60AF2300FD7360 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		AD85606E2B620225000798B3 /* PresentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDatePicker.swift; sourceTree = "<group>"; };
 		AD8560702B622B8B000798B3 /* ImagePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPage.swift; sourceTree = "<group>"; };
+		AD8560722B625A62000798B3 /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
+		AD8560742B625A6F000798B3 /* AlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentView.swift; sourceTree = "<group>"; };
+		AD8560762B625A79000798B3 /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				AD0284302B5E740900382CC0 /* BasicShowView.swift */,
 				AD0284322B5E741A00382CC0 /* TextInputView.swift */,
 				AD0284342B5E742B00382CC0 /* MultiPickerView.swift */,
+				AD8560722B625A62000798B3 /* PaddingView.swift */,
+				AD8560742B625A6F000798B3 /* AlignmentView.swift */,
+				AD8560762B625A79000798B3 /* GeometryView.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -247,12 +256,15 @@
 				AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */,
 				AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */,
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
+				AD8560772B625A79000798B3 /* GeometryView.swift in Sources */,
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
 				AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */,
+				AD8560752B625A6F000798B3 /* AlignmentView.swift in Sources */,
 				AD02842D2B5E624000382CC0 /* ExperienceView.swift in Sources */,
 				AD02841A2B5E597900382CC0 /* SwiftUIAPPApp.swift in Sources */,
+				AD8560732B625A62000798B3 /* PaddingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
