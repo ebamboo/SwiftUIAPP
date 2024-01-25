@@ -16,22 +16,60 @@ struct TestView: View {
 
     let url3 = URL(string: "https://gitee.com/ebamboo/Assets/raw/master/BBPictureBrowser/gif/04.gif")!
 
+    @State var text = "文艺复兴"
     
     var body: some View {
         VStack(spacing: 0) {
             Divider()
             ScrollView {
             
-                AsyncImage(url: url1)
                 
-                AsyncImage(url: url1)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 400, height: 400)
-                    .clipped()
+                Button("修改modal文字试试") {
+                    text += "中国"
+                }
+                Text(text)
+                
+                MyTestPicker(testText: text) {
+                    Text("click select")
+                        .foregroundStyle(.blue)
+                }
             
             }
             Divider()
         }
+    }
+    
+}
+
+
+struct MyTestPicker<Content: View>: View {
+    
+    @State var testText = "origin"
+    
+    @ViewBuilder var content: () -> Content
+    
+    @State var showPicker = false
+    
+    @Environment(\.presentationMode) var presentation
+    
+    var body: some View {
+        content()
+            .onTapGesture {
+//                showPicker = true
+                
+                presentation
+                
+            }
+    }
+}
+
+
+struct PickerPage: View {
+    
+    let text: String
+    
+    var body: some View {
+        Text(text)
     }
     
 }

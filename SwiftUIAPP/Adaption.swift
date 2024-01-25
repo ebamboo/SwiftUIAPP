@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - ===================
+
 extension View {
     
     /// 监听值变化
@@ -33,6 +35,60 @@ extension View {
     }
     
 }
+
+// MARK: - ===================
+
+struct AdaptionNavigationStack<Root: View>: View {
+    
+    @ViewBuilder var root: () -> Root
+    
+    var body: some View {
+        if #available(iOS 16.0, *) {
+            NavigationStack(root: root)
+        } else { // iOS 17.0 之后废弃
+            NavigationView(content: root)
+        }
+    }
+    
+}
+
+// MARK: - ===================
+
+enum AdaptionPresentationDetent {
+    case medium
+    case large
+    case fraction(_ fraction: CGFloat)
+    case height(_ height: CGFloat)
+}
+
+extension View {
+    
+    /// 自定义模态高度
+    /// iOS 16.0 之后才具有该功能
+    @ViewBuilder func adaptionPresentationDetents(_ detents: [AdaptionPresentationDetent]) -> some View {
+        if #available(iOS 16.0, *) {
+            presentationDetents(
+                Set(
+                    detents.map({ item in
+                        switch item {
+                        case .medium:
+                            PresentationDetent.medium
+                        case .large:
+                            PresentationDetent.large
+                        case .fraction(let value):
+                            PresentationDetent.fraction(value)
+                        case .height(let value):
+                            PresentationDetent.height(value)
+                        }
+                    })
+                )
+            )
+        }
+    }
+    
+}
+
+// MARK: - ===================
 
 ///
 /// 支持 placeholder 功能

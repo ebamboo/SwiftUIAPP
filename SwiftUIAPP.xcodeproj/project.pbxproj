@@ -19,6 +19,8 @@
 		AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871A2B5FE78B00FD7360 /* Adaption.swift */; };
 		AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */; };
 		AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871E2B60AF2300FD7360 /* TestView.swift */; };
+		AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85606E2B620225000798B3 /* PresentDatePicker.swift */; };
+		AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560702B622B8B000798B3 /* ImagePickerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AD08871A2B5FE78B00FD7360 /* Adaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaption.swift; sourceTree = "<group>"; };
 		AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeTextEditor.swift; sourceTree = "<group>"; };
 		AD08871E2B60AF2300FD7360 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		AD85606E2B620225000798B3 /* PresentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDatePicker.swift; sourceTree = "<group>"; };
+		AD8560702B622B8B000798B3 /* ImagePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				AD02842C2B5E624000382CC0 /* ExperienceView.swift */,
+				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
+				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
 			);
 			path = Experience;
 			sourceTree = "<group>";
@@ -236,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD02841C2B5E597900382CC0 /* RootView.swift in Sources */,
+				AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */,
+				AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */,
 				AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */,
 				AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */,
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
@@ -383,6 +391,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIAPP/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机使用说明";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "麦克风使用说明";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "相册使用说明";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -413,6 +424,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIAPP/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机使用说明";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "麦克风使用说明";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "相册使用说明";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
