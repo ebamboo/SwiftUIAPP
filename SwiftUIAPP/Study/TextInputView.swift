@@ -139,6 +139,29 @@ struct TextInputView: View {
                     Text(text)
                 }
                 
+                Section {
+                    let text = """
+                         使用 ToolBar 在键盘上方添加完成按钮关闭键盘；
+                         桥接 UITextView 之后，ToolBar 不对它生效，需要手动添加 ToolBar；唤起键盘时也容易遮挡桥接的 UITextView;
+                         因此谨慎使用桥接版本，只在必要时使用；
+                         """
+                    Text(text)
+                }
+                
+            }
+            .toolbar {
+                ToolbarItem(placement: .keyboard) {
+                    HStack {
+                        Button("Cancel") {
+                            currentField = nil
+                        }
+                        Spacer()
+                        Button("Ok") {
+                            currentField = nil
+                            print("======提交操作")
+                        }
+                    }
+                }
             }
             
             Divider()

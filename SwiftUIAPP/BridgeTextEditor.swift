@@ -1,40 +1,11 @@
 //
-//  BridgeUIKit.swift
+//  BridgeTextEditor.swift
 //  SwiftUIAPP
 //
 //  Created by ebamboo on 2024/1/24.
 //
 
 import SwiftUI
-import SDWebImage
-
-/// 支持 gif 等动图
-struct BridgeImageView: UIViewRepresentable {
-    
-    // MARK: - public
-    
-    @State var url: URL
-    @State var placeholderImage: UIImage?
-    
-    init(url: URL, placeholderImage: UIImage? = nil, configration: ((UIImageView) -> Void)? = nil)  {
-        configration?(imageView)
-        self._url = State(initialValue: url)
-        self._placeholderImage = State(initialValue: placeholderImage)
-    }
-
-    // MARK: - life
-    
-    private let imageView = UIImageView()
-    
-    func makeUIView(context: Context) -> UIImageView {
-        imageView
-    }
-    
-    func updateUIView(_ uiView: UIImageView, context: Context) {
-        uiView.sd_setImage(with: url, placeholderImage: placeholderImage)
-    }
-    
-}
 
 /// 支持更多属性配置
 /// 支持 focused 功能
@@ -53,15 +24,16 @@ struct BridgeTextEditor: UIViewRepresentable {
         if autoSize {
             textView = AutoSizeTextView()
         } else {
-            textView = UITextView()
+            textView = DefaultTextView()
         }
+        textView.addKeyboardToolBarDoneItem()
         configration?(textView)
         self._text = text
     }
     
     // MARK: - life
     
-    private let textView: UITextView
+    private let textView: ToolTextView
     
     func makeUIView(context: Context) -> UITextView {
         textView.delegate = context.coordinator
@@ -72,15 +44,13 @@ struct BridgeTextEditor: UIViewRepresentable {
         textView.text = text
     }
     
-    func makeCoordinator() -> TextViewDelegate {
-        TextViewDelegate { text in
+    func makeCoordinator() -> Coordinator {
+        Coordinator { text in
             self.text = text
         }
     }
     
-    // MARK: - class
-    
-    class TextViewDelegate: NSObject, UITextViewDelegate {
+    class Coordinator: NSObject, UITextViewDelegate {
         
         var onEditingChanged: (String) -> Void
         
@@ -93,8 +63,28 @@ struct BridgeTextEditor: UIViewRepresentable {
         }
         
     }
+    
+}
 
-    class AutoSizeTextView: UITextView {
+extension BridgeTextEditor {
+    
+    class ToolTextView: UITextView {
+        
+        func addKeyboardToolBarDoneItem() {
+            let done = UIBarButtonItem(title: "完成", style: .plain, target: self, action: #selector(self.closeKeyboard))
+            let keyboardToolBar = UIToolbar(frame: .init(x: 0, y: 0, width: 1, height: 100))
+            keyboardToolBar.items = [UIBarButtonItem.flexibleSpace(), done]
+            keyboardToolBar.sizeToFit()
+            inputAccessoryView = keyboardToolBar
+        }
+        
+        @objc func closeKeyboard() {
+            resignFirstResponder()
+        }
+        
+    }
+    
+    class AutoSizeTextView: ToolTextView { // 自适应高度
         
         override var contentSize: CGSize {
             didSet {
@@ -106,7 +96,11 @@ struct BridgeTextEditor: UIViewRepresentable {
             layoutIfNeeded()
             return contentSize
         }
-
+        
+    }
+    
+    class DefaultTextView: ToolTextView { // 原生功能
+        
     }
     
 }

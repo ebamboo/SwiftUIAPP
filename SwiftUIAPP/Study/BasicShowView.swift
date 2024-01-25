@@ -10,6 +10,7 @@ import SwiftUI
 private let url1 = URL(string: "https://gitee.com/ebamboo/Assets/raw/master/BBPictureBrowser/jpeg/05.jpeg")!
 private let url2 = URL(string: "https://gitee.com/ebamboo/Assets/raw/master/BBPictureBrowser/jpeg/03.jpeg")!
 private let url3 = URL(string: "https://gitee.com/ebamboo/Assets/raw/master/BBPictureBrowser/gif/04.gif")!
+private let url4 = URL(string: "https://gitee.com/ebamboo/Assets/raw/master/BBPictureBrowser/gif/02.gif")!
 
 struct BasicShowView: View {
     
@@ -101,32 +102,33 @@ struct BasicShowView: View {
             Image(.height01)
                 .resizable() // 设置可伸缩
                 .aspectRatio(contentMode: .fit) // 不设置高度 fit/fill 效果一样
-                .frame(width: 240)
+                .frame(width: 160)
                 .background(Color.gray)
             
             Image(.height01)
                 .resizable() // 设置可伸缩
                 .aspectRatio(contentMode: .fill) // 不设置高度 fit/fill 效果一样
-                .frame(width: 240)
+                .frame(width: 160)
                 .background(Color.gray)
             
             Image(.height01)
                 .resizable() // 设置可伸缩
                 .aspectRatio(contentMode: .fit) // 设置宽高观察 fit/fill 效果
-                .frame(width: 240, height: 120)
+                .frame(width: 160, height: 160)
                 .background(Color.gray)
+                .clipped()
             
             Image(.height01)
                 .resizable() // 设置可伸缩
                 .aspectRatio(contentMode: .fill) // 设置宽高观察 fit/fill 效果
-                .frame(width: 240, height: 120)
+                .frame(width: 160, height: 160)
                 .background(Color.gray)
                 .clipped() // 设置宽高后，fill 方式可能超出视图本身，所以最好设置裁剪
             
             Image(.low02)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 180, height: 180)
+                .frame(width: 160, height: 160)
                 .clipShape(.circle)
                 .overlay {
                     Circle()
@@ -147,39 +149,42 @@ struct BasicShowView: View {
     var webImageView: some View {
         Section {
             
-            Text("原生网络图片组件不支持gif动图")
-            Text("结合SDWebImage桥接UIImageView至SwiftUI")
+            let text = """
+               1、AsyncImage 不支持 resizable 方法，可在回调方法中设置；
+               2、原生网络图片组件不支持gif等动图，需要时使用第三方库；
+               3、注意网图在列表中的重用问题---列表优化！！！
+               """
+            Text(text)
             
-            AsyncImage(url: url1) // 直接设置
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 300)
+            AsyncImage(url: url1) // 图片不会缩放，图片本身大小展示
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+                .background(.gray)
                 .clipped()
-           
-            AsyncImage(url: url3) { image in // 提供 Placeholder 图片
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300)
+            
+            AsyncImage(url: url1) { image in
+                image.resizable() // 设置缩放
             } placeholder: {
-                Image(.height04)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300)
+                
             }
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 100, height: 100)
+            .background(.gray)
+            .clipped()
             
             AsyncImage(url: url2) { phase in // 可以处理各种状态下的展示情况
                 if let image = phase.image {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 300)
+                        
                 } else if phase.error != nil {
                     Text("错误提示：\(phase.error?.localizedDescription ?? "")")
                 } else {
                     ProgressView()
                 }
             }
-            
+            .frame(width: 120)
             
         } header: {
             HStack {

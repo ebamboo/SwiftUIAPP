@@ -15,6 +15,7 @@ struct SwiftUIAPPApp: App {
             
             RootView()
                 .ignoresSafeArea() // 占用全屏幕尺寸
+            
         }
     }
 }

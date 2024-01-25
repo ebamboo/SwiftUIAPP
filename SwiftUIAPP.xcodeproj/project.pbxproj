@@ -17,7 +17,7 @@
 		AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0284322B5E741A00382CC0 /* TextInputView.swift */; };
 		AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0284342B5E742B00382CC0 /* MultiPickerView.swift */; };
 		AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871A2B5FE78B00FD7360 /* Adaption.swift */; };
-		AD08871D2B60A9A700FD7360 /* BridgeUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871C2B60A9A700FD7360 /* BridgeUIKit.swift */; };
+		AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */; };
 		AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871E2B60AF2300FD7360 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		AD0284322B5E741A00382CC0 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		AD0284342B5E742B00382CC0 /* MultiPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPickerView.swift; sourceTree = "<group>"; };
 		AD08871A2B5FE78B00FD7360 /* Adaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaption.swift; sourceTree = "<group>"; };
-		AD08871C2B60A9A700FD7360 /* BridgeUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUIKit.swift; sourceTree = "<group>"; };
+		AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeTextEditor.swift; sourceTree = "<group>"; };
 		AD08871E2B60AF2300FD7360 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +85,7 @@
 				AD0284192B5E597900382CC0 /* SwiftUIAPPApp.swift */,
 				AD02841B2B5E597900382CC0 /* RootView.swift */,
 				AD08871E2B60AF2300FD7360 /* TestView.swift */,
-				AD08871C2B60A9A700FD7360 /* BridgeUIKit.swift */,
+				AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
 				AD0284282B5E61CD00382CC0 /* Study */,
 				AD02842B2B5E61F800382CC0 /* Experience */,
@@ -237,7 +237,7 @@
 			files = (
 				AD02841C2B5E597900382CC0 /* RootView.swift in Sources */,
 				AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */,
-				AD08871D2B60A9A700FD7360 /* BridgeUIKit.swift in Sources */,
+				AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */,
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
