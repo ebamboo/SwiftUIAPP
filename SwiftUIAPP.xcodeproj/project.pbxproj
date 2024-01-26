@@ -20,6 +20,8 @@
 		AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */; };
 		AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871E2B60AF2300FD7360 /* TestView.swift */; };
 		AD4E71C42B636BB80017EE0E /* CombineGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */; };
+		AD4E71C62B63750C0017EE0E /* LazyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E71C52B63750C0017EE0E /* LazyStackView.swift */; };
+		AD62A9D02B6379FA0050CD93 /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */; };
 		AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85606E2B620225000798B3 /* PresentDatePicker.swift */; };
 		AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560702B622B8B000798B3 /* ImagePickerPage.swift */; };
 		AD8560732B625A62000798B3 /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560722B625A62000798B3 /* PaddingView.swift */; };
@@ -50,6 +52,8 @@
 		AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeTextEditor.swift; sourceTree = "<group>"; };
 		AD08871E2B60AF2300FD7360 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineGestureView.swift; sourceTree = "<group>"; };
+		AD4E71C52B63750C0017EE0E /* LazyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStackView.swift; sourceTree = "<group>"; };
+		AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
 		AD85606E2B620225000798B3 /* PresentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDatePicker.swift; sourceTree = "<group>"; };
 		AD8560702B622B8B000798B3 /* ImagePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPage.swift; sourceTree = "<group>"; };
 		AD8560722B625A62000798B3 /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				AD85607E2B636251000798B3 /* RotationGestureView.swift */,
 				AD8560802B636265000798B3 /* MagnificationGestureView.swift */,
 				AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */,
+				AD4E71C52B63750C0017EE0E /* LazyStackView.swift */,
+				AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 				AD8560752B625A6F000798B3 /* AlignmentView.swift in Sources */,
 				AD85607F2B636251000798B3 /* RotationGestureView.swift in Sources */,
 				AD4E71C42B636BB80017EE0E /* CombineGestureView.swift in Sources */,
+				AD62A9D02B6379FA0050CD93 /* LazyGridView.swift in Sources */,
+				AD4E71C62B63750C0017EE0E /* LazyStackView.swift in Sources */,
 				AD02842D2B5E624000382CC0 /* ExperienceView.swift in Sources */,
 				AD02841A2B5E597900382CC0 /* SwiftUIAPPApp.swift in Sources */,
 				AD85607D2B635747000798B3 /* DragGestureView.swift in Sources */,

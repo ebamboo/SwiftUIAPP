@@ -70,6 +70,15 @@ struct StudyView: View {
         case (2, _):
             OrganizationView()
             
+        case (3, 0):
+            LazyStackView()
+        case (3, 1):
+            LazyGridView()
+        case (3, 2):
+            Text("苹果风格的列表，高度封装，很难甚至不能配置；一般使用 LazyStack 代替；只在一些简单 Modal 页面或者设置页面使用")
+        case (3, 3):
+            Text("苹果风格的列表，高度封装，很难甚至不能配置；一般使用 LazyStack 代替；只在一些简单 Modal 页面或者设置页面使用")
+            
         case (4, 0):
             SimpleGestureView()
         case (4, 1):
