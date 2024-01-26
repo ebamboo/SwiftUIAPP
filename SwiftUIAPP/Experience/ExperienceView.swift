@@ -14,6 +14,7 @@ struct ExperienceView: View {
         "桥接 TZImagePickerController 视频图片选择器",
         "自定义标签菜单(SegmentView)\n配合TabView实现联动分页效果",
         "桥接 BRPickerView 选择器",
+        "使用 TabView 分页方式作为图片浏览器",
         "获取ScrollView偏移量",
         "模态选择器",
         "系统文件分享",
@@ -52,6 +53,9 @@ struct ExperienceView: View {
             
         case 3:
             BridgePickerTest()
+            
+        case 4:
+            ImageBrowserTest()
             
         default:
             EmptyView()

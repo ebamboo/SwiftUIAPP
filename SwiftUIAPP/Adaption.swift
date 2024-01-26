@@ -83,6 +83,8 @@ extension View {
                     })
                 )
             )
+        } else {
+            self
         }
     }
     
