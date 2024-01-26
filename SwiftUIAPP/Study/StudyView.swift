@@ -23,7 +23,7 @@ struct StudyView: View {
             "LazyHStack/LazyVStack", "LazyHGrid/LazyVGrid", "List", "Form"
         ]),
         (title: "手势", itemList: [
-            "点击", "长按", "拖拽", "旋转", "缩放", "组合手势"
+            "点击和长按", "拖拽", "旋转", "缩放", "组合手势"
         ])
     ]
     
@@ -52,6 +52,7 @@ struct StudyView: View {
     @ViewBuilder func destinationView(section: Int, row: Int) -> some View {
         
         switch (section, row) {
+            
         case (0, 0):
             BasicShowView()
         case (0, 1):
@@ -66,8 +67,23 @@ struct StudyView: View {
         case (1, 2):
             GeometryView()
             
+        case (2, _):
+            OrganizationView()
+            
+        case (4, 0):
+            SimpleGestureView()
+        case (4, 1):
+            DragGestureView()
+        case (4, 2):
+            RotationGestureView()
+        case (4, 3):
+            MagnificationGestureView()
+        case (4, 4):
+            CombineGestureView()
+            
         default:
             EmptyView()
+            
         }
         
     }
