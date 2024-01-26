@@ -14,7 +14,7 @@ struct GeometryView: View {
             GeometryReader { geometry in
                 ScrollView {
                     
-                    VStack {
+                    VStack(spacing: 08) {
                         
                         let text1 = """
                               主要处理两类问：
@@ -35,10 +35,19 @@ struct GeometryView: View {
                             .background(.gray)
                         
                         let text3 = """
-                              Geometry 没法根据自身子视图的布局信息跟新自己的布局信息，也即是由父视图容器直接分配给最大的空间；
+                              Geometry 不会根据自身子视图的布局信息跟新自己的布局信息，只能由父视图容器直接分配给最大的空间；
                               如果父视图没提供，则使用 idea 尺寸；
                               """
                         Text(text3)
+                            .background(.gray)
+                        
+                        let text4 = """
+                              注意：
+                              父视图会在两个方向上单独地提供可用尺寸；
+                              如：在scrollview中，滑动方向的布局信息没法提供给geometry，
+                              因为滑动方向的布局信息是无限大的,此时geometry会取idea尺寸；
+                              """
+                        Text(text4)
                             .background(.gray)
                         
                         Text("实现一个宽高比为 2:1 动态高度")

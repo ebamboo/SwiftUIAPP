@@ -17,17 +17,14 @@ struct StudyView: View {
             "padding\nSpacer", "item alignment\nframe alignment\nalignmentGuide", "geometry"
         ]),
         (title: "组织和跳转", itemList: [
-            "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
+            "组织和跳转"
         ]),
         (title: "ScrollView", itemList: [
-            "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
+            "LazyHStack/LazyVStack", "LazyHGrid/LazyVGrid", "List", "Form"
         ]),
         (title: "手势", itemList: [
-            "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
-        ]),
-        (title: "动画", itemList: [
-            "文字", "图片", "Label", "按钮", "形状", "单行输入", "单行密码输入", ""
-        ]),
+            "点击", "长按", "拖拽", "旋转", "缩放", "组合手势"
+        ])
     ]
     
     var body: some View {
