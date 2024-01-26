@@ -22,6 +22,11 @@
 		AD4E71C42B636BB80017EE0E /* CombineGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */; };
 		AD4E71C62B63750C0017EE0E /* LazyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E71C52B63750C0017EE0E /* LazyStackView.swift */; };
 		AD62A9D02B6379FA0050CD93 /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */; };
+		AD62A9D42B6390270050CD93 /* BridgePagerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9D32B6390270050CD93 /* BridgePagerViewTest.swift */; };
+		AD62A9D62B63969B0050CD93 /* BridgeImgaPickerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9D52B63969B0050CD93 /* BridgeImgaPickerTest.swift */; };
+		AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9D72B639B050050CD93 /* SegementView.swift */; };
+		AD62A9DA2B639B9C0050CD93 /* TabViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9D92B639B9C0050CD93 /* TabViewTest.swift */; };
+		AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9DB2B639F4D0050CD93 /* BridgePickerTest.swift */; };
 		AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85606E2B620225000798B3 /* PresentDatePicker.swift */; };
 		AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560702B622B8B000798B3 /* ImagePickerPage.swift */; };
 		AD8560732B625A62000798B3 /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560722B625A62000798B3 /* PaddingView.swift */; };
@@ -54,6 +59,11 @@
 		AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineGestureView.swift; sourceTree = "<group>"; };
 		AD4E71C52B63750C0017EE0E /* LazyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStackView.swift; sourceTree = "<group>"; };
 		AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
+		AD62A9D32B6390270050CD93 /* BridgePagerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePagerViewTest.swift; sourceTree = "<group>"; };
+		AD62A9D52B63969B0050CD93 /* BridgeImgaPickerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeImgaPickerTest.swift; sourceTree = "<group>"; };
+		AD62A9D72B639B050050CD93 /* SegementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementView.swift; sourceTree = "<group>"; };
+		AD62A9D92B639B9C0050CD93 /* TabViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTest.swift; sourceTree = "<group>"; };
+		AD62A9DB2B639F4D0050CD93 /* BridgePickerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePickerTest.swift; sourceTree = "<group>"; };
 		AD85606E2B620225000798B3 /* PresentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDatePicker.swift; sourceTree = "<group>"; };
 		AD8560702B622B8B000798B3 /* ImagePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPage.swift; sourceTree = "<group>"; };
 		AD8560722B625A62000798B3 /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
@@ -113,6 +123,9 @@
 				AD08871E2B60AF2300FD7360 /* TestView.swift */,
 				AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
+				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
+				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
+				AD62A9D72B639B050050CD93 /* SegementView.swift */,
 				AD0284282B5E61CD00382CC0 /* Study */,
 				AD02842B2B5E61F800382CC0 /* Experience */,
 				AD02841D2B5E597A00382CC0 /* Assets.xcassets */,
@@ -146,8 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				AD02842C2B5E624000382CC0 /* ExperienceView.swift */,
-				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
-				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
+				AD62A9D32B6390270050CD93 /* BridgePagerViewTest.swift */,
+				AD62A9D52B63969B0050CD93 /* BridgeImgaPickerTest.swift */,
+				AD62A9D92B639B9C0050CD93 /* TabViewTest.swift */,
+				AD62A9DB2B639F4D0050CD93 /* BridgePickerTest.swift */,
 			);
 			path = Experience;
 			sourceTree = "<group>";
@@ -277,15 +292,20 @@
 				AD02841C2B5E597900382CC0 /* RootView.swift in Sources */,
 				AD8560792B633ECB000798B3 /* OrganizationView.swift in Sources */,
 				AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */,
+				AD62A9DA2B639B9C0050CD93 /* TabViewTest.swift in Sources */,
+				AD62A9D42B6390270050CD93 /* BridgePagerViewTest.swift in Sources */,
 				AD85607B2B6353A8000798B3 /* SimpleGestureView.swift in Sources */,
 				AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */,
 				AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */,
+				AD62A9D62B63969B0050CD93 /* BridgeImgaPickerTest.swift in Sources */,
 				AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */,
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
 				AD8560772B625A79000798B3 /* GeometryView.swift in Sources */,
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
+				AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */,
+				AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */,
 				AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */,
 				AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */,
 				AD8560752B625A6F000798B3 /* AlignmentView.swift in Sources */,

@@ -10,9 +10,10 @@ import SwiftUI
 struct ExperienceView: View {
     
     let itemList = [
-        "桥接UIKit轮播图",
-        "桥接UIKit视频图片选择器",
+        "桥接FSPagerView轮播图",
+        "桥接 TZImagePickerController 视频图片选择器",
         "自定义标签菜单(SegmentView)\n配合TabView实现联动分页效果",
+        "桥接 BRPickerView 选择器",
         "获取ScrollView偏移量",
         "模态选择器",
         "系统文件分享",
@@ -28,10 +29,34 @@ struct ExperienceView: View {
             Divider()
             
             List(0..<itemList.count, id: \.self) { index in
-                Text(itemList[index])
+                NavigationLink(destination: makeViewForNavigtion(index: index)) {
+                    Text(itemList[index])
+                }
             }
             
             Divider()
+        }
+    }
+    
+    @ViewBuilder func makeViewForNavigtion(index: Int) -> some View {
+        switch index {
+            
+        case 0:
+            BridgePagerViewTest()
+            
+        case 1:
+            BridgeImgaPickerTest()
+            
+        case 2:
+            TabViewTest()
+            
+        case 3:
+            BridgePickerTest()
+            
+        default:
+            EmptyView()
+            
+            
         }
     }
     

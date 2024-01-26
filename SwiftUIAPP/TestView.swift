@@ -55,9 +55,6 @@ struct MyTestPicker<Content: View>: View {
     var body: some View {
         content()
             .onTapGesture {
-//                showPicker = true
-                
-                presentation
                 
             }
     }
