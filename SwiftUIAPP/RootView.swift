@@ -44,5 +44,5 @@ struct RootView: UIViewControllerRepresentable {
 }
 
 #Preview {
-    RootView()
+    RootView().ignoresSafeArea() // 占用全屏幕尺寸
 }

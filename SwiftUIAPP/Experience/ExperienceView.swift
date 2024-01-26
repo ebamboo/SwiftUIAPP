@@ -16,6 +16,7 @@ struct ExperienceView: View {
         "桥接 BRPickerView 选择器",
         "使用 TabView 分页方式作为图片浏览器",
         "获取ScrollView偏移量",
+        "下拉刷新/上拉加载更多",
         "模态选择器",
         "系统文件分享",
         "SwiftUI截取视图",
@@ -41,26 +42,14 @@ struct ExperienceView: View {
     
     @ViewBuilder func makeViewForNavigtion(index: Int) -> some View {
         switch index {
-            
-        case 0:
-            BridgePagerViewTest()
-            
-        case 1:
-            BridgeImgaPickerTest()
-            
-        case 2:
-            TabViewTest()
-            
-        case 3:
-            BridgePickerTest()
-            
-        case 4:
-            ImageBrowserTest()
-            
-        default:
-            EmptyView()
-            
-            
+        case 0: BridgePagerViewTest()
+        case 1: BridgeImgaPickerTest()
+        case 2: TabViewTest()
+        case 3: BridgePickerTest()
+        case 4: ImageBrowserTest()
+        case 5: ScrollOffsetTest()
+        case 6: ScrollRefreshTest()
+        default: EmptyView()
         }
     }
     
