@@ -17,13 +17,13 @@ struct SnapShotViewTest: View {
         
         VStack(spacing: 8) {
             Text(text)
-                .frame(minHeight: 44)
                 .lineLimit(nil)
                 .background(.white)
             Image(.low02)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 160)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 160, height: 160)
+            
         }
         .frame(width: 300)
         .background(Color.cyan)

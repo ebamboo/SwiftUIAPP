@@ -34,6 +34,7 @@
 		AD62A9EC2B64D9760050CD93 /* BridgeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */; };
 		AD62A9EE2B64E6B40050CD93 /* SharePageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */; };
 		AD62A9F02B64E6C50050CD93 /* SnapShotViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */; };
+		AD62A9F22B64F1B60050CD93 /* Rotation3DTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */; };
 		AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85606E2B620225000798B3 /* PresentDatePicker.swift */; };
 		AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560702B622B8B000798B3 /* ImagePickerPage.swift */; };
 		AD8560732B625A62000798B3 /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560722B625A62000798B3 /* PaddingView.swift */; };
@@ -78,6 +79,7 @@
 		AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeIndicatorView.swift; sourceTree = "<group>"; };
 		AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePageTest.swift; sourceTree = "<group>"; };
 		AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotViewTest.swift; sourceTree = "<group>"; };
+		AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation3DTest.swift; sourceTree = "<group>"; };
 		AD85606E2B620225000798B3 /* PresentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDatePicker.swift; sourceTree = "<group>"; };
 		AD8560702B622B8B000798B3 /* ImagePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPage.swift; sourceTree = "<group>"; };
 		AD8560722B625A62000798B3 /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				AD62A9E92B64D3F30050CD93 /* PickerPageTest.swift */,
 				AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */,
 				AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */,
+				AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */,
 			);
 			path = Experience;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				AD62A9DA2B639B9C0050CD93 /* TabViewTest.swift in Sources */,
 				AD62A9E02B63AE620050CD93 /* ImageBrowserTest.swift in Sources */,
 				AD62A9E42B63D9A70050CD93 /* ScrollOffsetTest.swift in Sources */,
+				AD62A9F22B64F1B60050CD93 /* Rotation3DTest.swift in Sources */,
 				AD62A9D42B6390270050CD93 /* BridgePagerViewTest.swift in Sources */,
 				AD85607B2B6353A8000798B3 /* SimpleGestureView.swift in Sources */,
 				AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */,

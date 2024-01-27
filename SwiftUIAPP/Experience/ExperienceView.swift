@@ -52,6 +52,7 @@ struct ExperienceView: View {
         case 7: PickerPageTest()
         case 8: SharePageTest()
         case 9: SnapShotViewTest()
+        case 10: Rotation3DTest()
         default: EmptyView()
         }
     }
