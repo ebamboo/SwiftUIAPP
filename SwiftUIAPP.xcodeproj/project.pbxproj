@@ -30,6 +30,10 @@
 		AD62A9E02B63AE620050CD93 /* ImageBrowserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9DF2B63AE620050CD93 /* ImageBrowserTest.swift */; };
 		AD62A9E42B63D9A70050CD93 /* ScrollOffsetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9E32B63D9A70050CD93 /* ScrollOffsetTest.swift */; };
 		AD62A9E62B63D9B60050CD93 /* ScrollRefreshTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9E52B63D9B60050CD93 /* ScrollRefreshTest.swift */; };
+		AD62A9EA2B64D3F30050CD93 /* PickerPageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9E92B64D3F30050CD93 /* PickerPageTest.swift */; };
+		AD62A9EC2B64D9760050CD93 /* BridgeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */; };
+		AD62A9EE2B64E6B40050CD93 /* SharePageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */; };
+		AD62A9F02B64E6C50050CD93 /* SnapShotViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */; };
 		AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85606E2B620225000798B3 /* PresentDatePicker.swift */; };
 		AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560702B622B8B000798B3 /* ImagePickerPage.swift */; };
 		AD8560732B625A62000798B3 /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560722B625A62000798B3 /* PaddingView.swift */; };
@@ -70,6 +74,10 @@
 		AD62A9DF2B63AE620050CD93 /* ImageBrowserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBrowserTest.swift; sourceTree = "<group>"; };
 		AD62A9E32B63D9A70050CD93 /* ScrollOffsetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetTest.swift; sourceTree = "<group>"; };
 		AD62A9E52B63D9B60050CD93 /* ScrollRefreshTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRefreshTest.swift; sourceTree = "<group>"; };
+		AD62A9E92B64D3F30050CD93 /* PickerPageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPageTest.swift; sourceTree = "<group>"; };
+		AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeIndicatorView.swift; sourceTree = "<group>"; };
+		AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePageTest.swift; sourceTree = "<group>"; };
+		AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotViewTest.swift; sourceTree = "<group>"; };
 		AD85606E2B620225000798B3 /* PresentDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDatePicker.swift; sourceTree = "<group>"; };
 		AD8560702B622B8B000798B3 /* ImagePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPage.swift; sourceTree = "<group>"; };
 		AD8560722B625A62000798B3 /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 				AD02841B2B5E597900382CC0 /* RootView.swift */,
 				AD08871E2B60AF2300FD7360 /* TestView.swift */,
 				AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */,
+				AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
 				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
 				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
@@ -172,6 +181,9 @@
 				AD62A9DF2B63AE620050CD93 /* ImageBrowserTest.swift */,
 				AD62A9E32B63D9A70050CD93 /* ScrollOffsetTest.swift */,
 				AD62A9E52B63D9B60050CD93 /* ScrollRefreshTest.swift */,
+				AD62A9E92B64D3F30050CD93 /* PickerPageTest.swift */,
+				AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */,
+				AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */,
 			);
 			path = Experience;
 			sourceTree = "<group>";
@@ -308,12 +320,15 @@
 				AD85607B2B6353A8000798B3 /* SimpleGestureView.swift in Sources */,
 				AD8560712B622B8B000798B3 /* ImagePickerPage.swift in Sources */,
 				AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */,
+				AD62A9EA2B64D3F30050CD93 /* PickerPageTest.swift in Sources */,
 				AD62A9D62B63969B0050CD93 /* BridgeImgaPickerTest.swift in Sources */,
 				AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */,
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
 				AD8560772B625A79000798B3 /* GeometryView.swift in Sources */,
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
+				AD62A9EE2B64E6B40050CD93 /* SharePageTest.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
+				AD62A9EC2B64D9760050CD93 /* BridgeIndicatorView.swift in Sources */,
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
 				AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */,
 				AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */,
@@ -323,6 +338,7 @@
 				AD85607F2B636251000798B3 /* RotationGestureView.swift in Sources */,
 				AD62A9E62B63D9B60050CD93 /* ScrollRefreshTest.swift in Sources */,
 				AD4E71C42B636BB80017EE0E /* CombineGestureView.swift in Sources */,
+				AD62A9F02B64E6C50050CD93 /* SnapShotViewTest.swift in Sources */,
 				AD62A9D02B6379FA0050CD93 /* LazyGridView.swift in Sources */,
 				AD4E71C62B63750C0017EE0E /* LazyStackView.swift in Sources */,
 				AD02842D2B5E624000382CC0 /* ExperienceView.swift in Sources */,

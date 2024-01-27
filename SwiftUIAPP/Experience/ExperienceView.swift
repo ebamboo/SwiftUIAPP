@@ -49,6 +49,9 @@ struct ExperienceView: View {
         case 4: ImageBrowserTest()
         case 5: ScrollOffsetTest()
         case 6: ScrollRefreshTest()
+        case 7: PickerPageTest()
+        case 8: SharePageTest()
+        case 9: SnapShotViewTest()
         default: EmptyView()
         }
     }

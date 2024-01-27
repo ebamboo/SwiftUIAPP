@@ -130,3 +130,114 @@ struct AdaptionTextEditor: View {
     }
     
 }
+
+// MARK: - ===================
+
+extension View {
+    
+    /// 截取视图输出 UIImage
+    /// ！！！截取时注意截取的视图尺寸保持不变！！！
+    /// 包括系统封装的截图工具都会出现尺寸超预期的情况，
+    /// 在实际使用中尽量把各种尺寸都固定下来，减少变形的情况
+    ///
+    /// 设置要截取的视图忽略安全区域；不要使用 padding；
+    /// ！！！尽量固定尺寸！！！
+    func adaptionSnapshot() -> UIImage {
+        let controller = UIHostingController(rootView: self)
+        let view = controller.view
+
+        let targetSize = controller.view.intrinsicContentSize
+        view?.bounds = CGRect(origin: .zero, size: targetSize)
+        view?.backgroundColor = .clear
+
+        let renderer = UIGraphicsImageRenderer(size: targetSize)
+
+        return renderer.image { _ in
+            view?.drawHierarchy(in: controller.view.bounds, afterScreenUpdates: true)
+        }
+    }
+    
+}
+
+// MARK: - ===================
+
+enum AdaptionShareItemType {
+    case text(_ text: String)
+    case url(_ url: URL) // 网址链接或者本地文件路径
+    case image(_ image: UIImage)
+}
+
+struct AdaptionShareLink<Content>: View where Content: View { // 不能控制是否应该弹出分享页面
+    
+    typealias CompletionHandler = (UIActivity.ActivityType?, Bool, [Any]?, Error?) -> Void
+    
+    let items: [AdaptionShareItemType]
+    @ViewBuilder var content: () -> Content
+    let completion: CompletionHandler?
+    
+    init(items: [AdaptionShareItemType], @ViewBuilder content: @escaping () -> Content, completion: CompletionHandler? = nil) {
+        self.items = items
+        self.content = content
+        self.completion = completion
+    }
+    init(items: AdaptionShareItemType..., @ViewBuilder content: @escaping () -> Content, completion: CompletionHandler? = nil) {
+        self.items = items
+        self.content = content
+        self.completion = completion
+    }
+    
+    @State private var showShareView = false
+    
+    var body: some View {
+        content()
+            .onTapGesture {
+                guard !items.isEmpty else { return }
+                showShareView = true
+            }
+            .sheet(isPresented: $showShareView) {
+                AdaptionShareView(items: items, completion: completion)
+            }
+    }
+    
+}
+
+struct AdaptionShareView: UIViewControllerRepresentable { // 可以控制是否应该弹出分享页面
+    
+    typealias CompletionHandler = (UIActivity.ActivityType?, Bool, [Any]?, Error?) -> Void
+    
+    let items: [AdaptionShareItemType]
+    let completion: CompletionHandler?
+    
+    init(items: [AdaptionShareItemType], completion: CompletionHandler? = nil) {
+        self.items = items
+        self.completion = completion
+    }
+    init(items: AdaptionShareItemType..., completion: CompletionHandler? = nil) {
+        self.items = items
+        self.completion = completion
+    }
+    
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let activityItems: [Any] = items.map { item in
+            switch item {
+            case .text(let text):
+                return text
+            case .url(let url):
+                return url
+            case .image(let image):
+                return image
+            }
+        }
+        let activityViewController = UIActivityViewController(
+            activityItems: activityItems,
+            applicationActivities: nil
+        )
+        activityViewController.completionWithItemsHandler = completion
+        return activityViewController
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
+        
+    }
+    
+}
