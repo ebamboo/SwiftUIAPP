@@ -16,13 +16,16 @@ struct SnapShotViewTest: View {
     var myview: some View {
         
         VStack(spacing: 8) {
+            
             Text(text)
                 .lineLimit(nil)
                 .background(.white)
+            
             Image(.low02)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 160, height: 160)
+                .clipped()
             
         }
         .frame(width: 300)

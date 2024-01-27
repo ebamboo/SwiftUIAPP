@@ -50,6 +50,12 @@ struct GeometryView: View {
                         Text(text4)
                             .background(.gray)
                         
+                        let text5 = """
+                              GeometryProxy 的 size 属性返回的是视图的布局尺寸，而通过 frame.size 返回的则是最终的渲染尺寸。
+                              """
+                        Text(text5)
+                            .background(.gray)
+                        
                         Text("实现一个宽高比为 2:1 动态高度")
                             .frame(width: geometry.size.width, height: geometry.size.width/2)
                             .background(.gray)

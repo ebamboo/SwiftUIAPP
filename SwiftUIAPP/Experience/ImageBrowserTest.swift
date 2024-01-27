@@ -13,7 +13,11 @@ struct ImageBrowserTest: View {
     
     let imageList = ["height_01", "height_02", "height_03", "height_04"]
     
-    
+    /*
+     最好还是桥接UIKit图片浏览器
+     如果第三方需要参数 view，那么使用 window；
+     window 从开始处获取或者从环境变量中获取；
+     */
     
     
     var body: some View {
