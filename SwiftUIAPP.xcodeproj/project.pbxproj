@@ -46,6 +46,7 @@
 		AD85607F2B636251000798B3 /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85607E2B636251000798B3 /* RotationGestureView.swift */; };
 		AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560802B636265000798B3 /* MagnificationGestureView.swift */; };
 		AD91D6A82B66657500214138 /* CustomCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6A72B66657500214138 /* CustomCloseView.swift */; };
+		AD91D6AC2B673E4D00214138 /* NavigationPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AB2B673E4D00214138 /* NavigationPush.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		AD85607E2B636251000798B3 /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		AD8560802B636265000798B3 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
 		AD91D6A72B66657500214138 /* CustomCloseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCloseView.swift; sourceTree = "<group>"; };
+		AD91D6AB2B673E4D00214138 /* NavigationPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPush.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */,
 				AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
+				AD91D6AB2B673E4D00214138 /* NavigationPush.swift */,
 				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
 				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
 				AD62A9D72B639B050050CD93 /* SegementView.swift */,
@@ -339,6 +342,7 @@
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
 				AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */,
 				AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */,
+				AD91D6AC2B673E4D00214138 /* NavigationPush.swift in Sources */,
 				AD91D6A82B66657500214138 /* CustomCloseView.swift in Sources */,
 				AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */,
 				AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */,
