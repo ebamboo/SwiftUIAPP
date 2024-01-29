@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct AlertToastTest: View {
-    var body: some View {
-        Text("aaaa")
+ 
+    var body: some View{
+        Text("参考 AlertToast 写一个比较简单的版本")
     }
+    
 }
 
 #Preview {
