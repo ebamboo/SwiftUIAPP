@@ -22,6 +22,7 @@ struct CustomDatePicker<Content: View>: View {
             }
             .sheet(isPresented: $showPicker) {
                 PresentDatePicker(date: $date, configration: configration)
+                    .adaptionPresentationDetents([.height(520), .large]) // 模态修饰要放在最外边
             }
     }
     
@@ -45,7 +46,6 @@ struct PresentDatePicker: View {
             .navigationTitle(configration.title)
             .navigationBarTitleDisplayMode(.inline)
         }
-        .adaptionPresentationDetents([.height(520), .large]) // 模态修饰要放在最外边
     }
     
     @ViewBuilder func makeDatePicker() -> some View {

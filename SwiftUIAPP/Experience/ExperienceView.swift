@@ -22,7 +22,8 @@ struct ExperienceView: View {
         "SwiftUI截取视图",
         "3D旋转 rotation3DEffect",
         "列表中网络图片优化",
-        "SwiftUI原生第三方AlertToast库" // https://github.com/elai950/AlertToast
+        "SwiftUI原生第三方AlertToast库", // https://github.com/elai950/AlertToast
+        "待解决问题或者解决方式不优雅"
     ]
     
     var body: some View {
@@ -55,6 +56,9 @@ struct ExperienceView: View {
         case 8: SharePageTest()
         case 9: SnapShotViewTest()
         case 10: Rotation3DTest()
+        case 11: WebImageListTest()
+        case 12: AlertToastTest()
+        case 13: QuestionView()
         default: EmptyView()
         }
     }
