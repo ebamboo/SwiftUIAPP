@@ -31,6 +31,8 @@ extension View {
     @ViewBuilder func adaptionScrollContentBackground(_ visibility: Visibility) -> some View {
         if #available(iOS 16.0, *) {
             scrollContentBackground(visibility)
+        } else {
+            self
         }
     }
     
@@ -143,11 +145,11 @@ extension View {
     ///
     /// 设置要截取的视图忽略安全区域；不要使用 padding；
     /// ！！！尽量固定尺寸！！！
-    func adaptionSnapshot() -> UIImage {
+    func adaptionSnapshot(with size: CGSize = .zero) -> UIImage {
         let controller = UIHostingController(rootView: self)
         let view = controller.view
 
-        let targetSize = controller.view.intrinsicContentSize
+        let targetSize = size == .zero ? controller.view.intrinsicContentSize : size
         view?.bounds = CGRect(origin: .zero, size: targetSize)
         view?.backgroundColor = .clear
 

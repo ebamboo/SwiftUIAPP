@@ -45,6 +45,7 @@
 		AD85607D2B635747000798B3 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85607C2B635747000798B3 /* DragGestureView.swift */; };
 		AD85607F2B636251000798B3 /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85607E2B636251000798B3 /* RotationGestureView.swift */; };
 		AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560802B636265000798B3 /* MagnificationGestureView.swift */; };
+		AD91D6A82B66657500214138 /* CustomCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6A72B66657500214138 /* CustomCloseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		AD85607C2B635747000798B3 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		AD85607E2B636251000798B3 /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		AD8560802B636265000798B3 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
+		AD91D6A72B66657500214138 /* CustomCloseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCloseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
 				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
 				AD62A9D72B639B050050CD93 /* SegementView.swift */,
+				AD91D6A72B66657500214138 /* CustomCloseView.swift */,
 				AD0284282B5E61CD00382CC0 /* Study */,
 				AD02842B2B5E61F800382CC0 /* Experience */,
 				AD02841D2B5E597A00382CC0 /* Assets.xcassets */,
@@ -336,6 +339,7 @@
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
 				AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */,
 				AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */,
+				AD91D6A82B66657500214138 /* CustomCloseView.swift in Sources */,
 				AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */,
 				AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */,
 				AD8560752B625A6F000798B3 /* AlignmentView.swift in Sources */,

@@ -13,26 +13,7 @@ struct SnapShotViewTest: View {
     
     @State var shotImage: UIImage?
     
-    var myview: some View {
-        
-        VStack(spacing: 8) {
-            
-            Text(text)
-                .lineLimit(nil)
-                .background(.white)
-            
-            Image(.low02)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 160, height: 160)
-                .clipped()
-            
-        }
-        .frame(width: 300)
-        .background(Color.cyan)
-        .ignoresSafeArea()
-        
-    }
+    var myview = MyView()
     
     var body: some View {
         ScrollView {
@@ -46,7 +27,8 @@ struct SnapShotViewTest: View {
                 myview
                 
                 Button("截图") {
-                    shotImage = myview.adaptionSnapshot()
+                    print("outer ===\(myview.size)")
+                    shotImage = myview.getShotImage()
                 }
                 
                 Image(uiImage: shotImage ?? UIImage(systemName: "star")!)
@@ -54,6 +36,68 @@ struct SnapShotViewTest: View {
             }
         }
     }
+    
+    struct MyView: View {
+        
+        // MARK: - extern
+        
+//        @Binding var text: String
+        
+        let text = "挡杀佛是否水岸东11111方1111111111是是发发发的方式防守打法阿是放松放松防守打法士大夫士大夫撒发生 "
+        
+        
+        func getShotImage() -> UIImage {
+            adaptionSnapshot(with: size)
+        }
+        
+        // MARK: - life
+        
+        @State var size: CGSize = .init(width: 300, height: 233)
+        
+        var body: some View {
+            
+            VStack(spacing: 8) {
+                
+                Text(text)
+                    .lineLimit(nil)
+                    .background(.white)
+                
+                Image(.low02)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 160, height: 160)
+                    .clipped()
+                
+            }
+            
+            .frame(width: 300)
+            .background {
+                GeometryReader { geo in
+                    let _ = {
+                        size = geo.frame(in: .local).size
+                    }()
+//                    Color.clear
+//                        .task(id: size) {
+//                            
+//                            
+//                            DispatchQueue.main.async {
+//                                
+//                                self.size = size
+//                                
+//                                print("=== \(size)")
+//                                print("+++ \(self.size)")
+//                            }
+//                        }
+                }
+            }
+            
+            .background(.cyan)
+            .ignoresSafeArea()
+        }
+    }
+    
+    
+    
 }
 
 #Preview {
