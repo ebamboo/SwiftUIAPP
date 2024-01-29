@@ -47,7 +47,7 @@
 		AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8560802B636265000798B3 /* MagnificationGestureView.swift */; };
 		AD91D6A82B66657500214138 /* CustomCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6A72B66657500214138 /* CustomCloseView.swift */; };
 		AD91D6AC2B673E4D00214138 /* NavigationPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AB2B673E4D00214138 /* NavigationPush.swift */; };
-		AD91D6AE2B67847200214138 /* AlertToastTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AD2B67847200214138 /* AlertToastTest.swift */; };
+		AD91D6AE2B67847200214138 /* CustomToastTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AD2B67847200214138 /* CustomToastTest.swift */; };
 		AD91D6B02B67848200214138 /* WebImageListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AF2B67848200214138 /* WebImageListTest.swift */; };
 		AD91D6B22B67855E00214138 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6B12B67855E00214138 /* QuestionView.swift */; };
 /* End PBXBuildFile section */
@@ -97,7 +97,7 @@
 		AD8560802B636265000798B3 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
 		AD91D6A72B66657500214138 /* CustomCloseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCloseView.swift; sourceTree = "<group>"; };
 		AD91D6AB2B673E4D00214138 /* NavigationPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPush.swift; sourceTree = "<group>"; };
-		AD91D6AD2B67847200214138 /* AlertToastTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToastTest.swift; sourceTree = "<group>"; };
+		AD91D6AD2B67847200214138 /* CustomToastTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastTest.swift; sourceTree = "<group>"; };
 		AD91D6AF2B67848200214138 /* WebImageListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageListTest.swift; sourceTree = "<group>"; };
 		AD91D6B12B67855E00214138 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,7 +200,7 @@
 				AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */,
 				AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */,
 				AD91D6AF2B67848200214138 /* WebImageListTest.swift */,
-				AD91D6AD2B67847200214138 /* AlertToastTest.swift */,
+				AD91D6AD2B67847200214138 /* CustomToastTest.swift */,
 				AD91D6B12B67855E00214138 /* QuestionView.swift */,
 			);
 			path = Experience;
@@ -352,7 +352,7 @@
 				AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */,
 				AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */,
 				AD91D6AC2B673E4D00214138 /* NavigationPush.swift in Sources */,
-				AD91D6AE2B67847200214138 /* AlertToastTest.swift in Sources */,
+				AD91D6AE2B67847200214138 /* CustomToastTest.swift in Sources */,
 				AD91D6A82B66657500214138 /* CustomCloseView.swift in Sources */,
 				AD8560812B636265000798B3 /* MagnificationGestureView.swift in Sources */,
 				AD0284352B5E742B00382CC0 /* MultiPickerView.swift in Sources */,

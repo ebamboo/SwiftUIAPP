@@ -13,8 +13,6 @@ target 'SwiftUIAPP' do
   pod 'TZImagePickerController'
   pod 'BRPickerView'
   pod 'UITextView+Placeholder'
-  
-  pod 'AlertToast'
 
 end
 
