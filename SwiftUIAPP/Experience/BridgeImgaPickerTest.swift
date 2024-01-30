@@ -26,9 +26,20 @@ struct BridgeImgaPickerTest: View {
             ) {
                 
                 ForEach(0..<imageList.count, id: \.self) { index in
-                    Image(uiImage: imageList[index].0)
-                        .resizable()
-                        .aspectRatio(.init(width: 1, height: 1), contentMode: .fill)
+                    ZStack {
+                        Rectangle()
+                            .fill(.clear)
+                            .aspectRatio(.init(width: 1, height: 1), contentMode: .fill)
+                        
+                        GeometryReader { geo in
+                            Image(uiImage: imageList[index].0)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                
+                        }
+                        .clipped()
+                    }
                 }
                 var configration = ImagePickerPage.Configration()
                 let _ = configration.maxImagesCount = 4

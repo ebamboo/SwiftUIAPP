@@ -21,7 +21,7 @@ struct ExperienceView: View {
         "系统文件分享",
         "SwiftUI截取视图",
         "3D旋转 rotation3DEffect",
-        "列表中网络图片优化",
+        "网络图片列表",
         "实现一个 Toast 工具",
         "待解决问题或者解决方式不优雅"
     ]
