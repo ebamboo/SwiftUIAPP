@@ -29,3 +29,38 @@ extension View {
     }
     
 }
+
+/*
+ 使用 UIKit 方式导航至指定页面
+ */
+extension UINavigationController {
+    
+    func popToViewController(aClass: AnyClass, animated: Bool) {
+        guard let vc = viewControllers.first(where: { itemVC in
+            itemVC.isKind(of: aClass)
+        }) else { return }
+        popToViewController(vc, animated: animated)
+    }
+    
+    func popToViewController(index: Int, animated: Bool) {
+        guard index > 0 else {
+            popToRootViewController(animated: animated) // pop 太大页面，最多到 root
+            return
+        }
+        guard index < viewControllers.count else { return }
+        let vc = viewControllers[index]
+        popToViewController(vc, animated: animated)
+    }
+    
+    func popViewControllers(count: Int, animated: Bool) {
+        guard count > 0 else { return } // 至少 pop 一个页面
+        if count < viewControllers.count {
+            let targetIndex = (viewControllers.count - 1) - count
+            let vc = viewControllers[targetIndex]
+            popToViewController(vc, animated: animated)
+        } else { // pop 太大页面，最多到 root
+            popToRootViewController(animated: animated)
+        }
+    }
+    
+}

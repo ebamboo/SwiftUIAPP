@@ -11,10 +11,9 @@ struct QuestionView: View {
     var body: some View {
         
         let text = """
-          1、图片或者视频浏览器：
-          目前可以想办法获取 window，使用自己或者第三方的浏览器；
+          1、ScrollView 底部加载更多；
+          a、加大每页大数量；b、手动加载更多；
           2、SwiftUI 视图截图效果不稳定；
-          3、导航栈或者模态栈返回指定页面测试不充分；
           """
         Text(text)
     }
