@@ -128,7 +128,7 @@ struct ScrollRefreshTest01: View {
             Divider()
         }
         .disabled(vm.isLoadingData)
-        .showLoading($vm.isLoadingData)
+        .loading(isPresented: $vm.isLoadingData)
         .adaptionOnChange(of: isPresented) { newValue in // 第一次加载之后不会再变化，可以认为是 viewDidLoad
             if newValue {
                 Task {

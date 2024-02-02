@@ -19,6 +19,7 @@
 		AD08871B2B5FE78B00FD7360 /* Adaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871A2B5FE78B00FD7360 /* Adaption.swift */; };
 		AD08871D2B60A9A700FD7360 /* BridgeTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */; };
 		AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08871E2B60AF2300FD7360 /* TestView.swift */; };
+		AD17EDC32B6CE44C00533803 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17EDC22B6CE44C00533803 /* ToastView.swift */; };
 		AD4E71C42B636BB80017EE0E /* CombineGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */; };
 		AD4E71C62B63750C0017EE0E /* LazyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E71C52B63750C0017EE0E /* LazyStackView.swift */; };
 		AD62A9D02B6379FA0050CD93 /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */; };
@@ -31,7 +32,6 @@
 		AD62A9E42B63D9A70050CD93 /* ScrollOffsetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9E32B63D9A70050CD93 /* ScrollOffsetTest.swift */; };
 		AD62A9E62B63D9B60050CD93 /* ScrollRefreshTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9E52B63D9B60050CD93 /* ScrollRefreshTest.swift */; };
 		AD62A9EA2B64D3F30050CD93 /* PickerPageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9E92B64D3F30050CD93 /* PickerPageTest.swift */; };
-		AD62A9EC2B64D9760050CD93 /* BridgeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */; };
 		AD62A9EE2B64E6B40050CD93 /* SharePageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */; };
 		AD62A9F02B64E6C50050CD93 /* SnapShotViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */; };
 		AD62A9F22B64F1B60050CD93 /* Rotation3DTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */; };
@@ -69,6 +69,7 @@
 		AD08871A2B5FE78B00FD7360 /* Adaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaption.swift; sourceTree = "<group>"; };
 		AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeTextEditor.swift; sourceTree = "<group>"; };
 		AD08871E2B60AF2300FD7360 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		AD17EDC22B6CE44C00533803 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		AD4E71C32B636BB80017EE0E /* CombineGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineGestureView.swift; sourceTree = "<group>"; };
 		AD4E71C52B63750C0017EE0E /* LazyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStackView.swift; sourceTree = "<group>"; };
 		AD62A9CF2B6379FA0050CD93 /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		AD62A9E32B63D9A70050CD93 /* ScrollOffsetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetTest.swift; sourceTree = "<group>"; };
 		AD62A9E52B63D9B60050CD93 /* ScrollRefreshTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRefreshTest.swift; sourceTree = "<group>"; };
 		AD62A9E92B64D3F30050CD93 /* PickerPageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPageTest.swift; sourceTree = "<group>"; };
-		AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeIndicatorView.swift; sourceTree = "<group>"; };
 		AD62A9ED2B64E6B40050CD93 /* SharePageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePageTest.swift; sourceTree = "<group>"; };
 		AD62A9EF2B64E6C50050CD93 /* SnapShotViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotViewTest.swift; sourceTree = "<group>"; };
 		AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation3DTest.swift; sourceTree = "<group>"; };
@@ -148,13 +148,13 @@
 				AD02841B2B5E597900382CC0 /* RootView.swift */,
 				AD08871E2B60AF2300FD7360 /* TestView.swift */,
 				AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */,
-				AD62A9EB2B64D9760050CD93 /* BridgeIndicatorView.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
 				AD91D6AB2B673E4D00214138 /* NavigationPush.swift */,
 				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
 				AD85606E2B620225000798B3 /* PresentDatePicker.swift */,
 				AD62A9D72B639B050050CD93 /* SegementView.swift */,
 				AD91D6A72B66657500214138 /* CustomCloseView.swift */,
+				AD17EDC22B6CE44C00533803 /* ToastView.swift */,
 				AD0284282B5E61CD00382CC0 /* Study */,
 				AD02842B2B5E61F800382CC0 /* Experience */,
 				AD02841D2B5E597A00382CC0 /* Assets.xcassets */,
@@ -347,9 +347,9 @@
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
 				AD62A9EE2B64E6B40050CD93 /* SharePageTest.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
-				AD62A9EC2B64D9760050CD93 /* BridgeIndicatorView.swift in Sources */,
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
 				AD62A9D82B639B050050CD93 /* SegementView.swift in Sources */,
+				AD17EDC32B6CE44C00533803 /* ToastView.swift in Sources */,
 				AD62A9DC2B639F4D0050CD93 /* BridgePickerTest.swift in Sources */,
 				AD91D6AC2B673E4D00214138 /* NavigationPush.swift in Sources */,
 				AD91D6AE2B67847200214138 /* CustomToastTest.swift in Sources */,

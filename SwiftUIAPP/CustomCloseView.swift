@@ -36,6 +36,40 @@ struct CustomCloseView<Content: View>: View {
     
 }
 
+/// 可通过数据控制是否关闭页面
+struct BindingCloseView<Content: View>: View {
+    
+    @Binding var close: Bool
+    var disablesAnimations = false
+    @ViewBuilder var content: () -> Content
+    
+    @Environment(\.dismiss) private var dismiss
+    
+    var body: some View {
+        content()
+            .onTapGesture {
+                closeAction()
+            }
+            .adaptionOnChange(of: close) { newValue in
+                if newValue { closeAction() }
+            }
+    }
+    
+    private func closeAction() {
+        if disablesAnimations {
+            // 关闭 dismiss 动画
+            var transaction = Transaction()
+            transaction.disablesAnimations = true
+            withTransaction(transaction) {
+                dismiss()
+            }
+        } else {
+            dismiss()
+        }
+    }
+    
+}
+
 // MARK: - ===================================
 
 private struct CustomCloseView_Test: View {
