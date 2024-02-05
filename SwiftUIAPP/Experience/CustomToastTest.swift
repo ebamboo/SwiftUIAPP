@@ -27,7 +27,7 @@ struct CustomToastTest: View {
             Button {
                 isLoading = false
             } label: {
-                Text("介绍 Loading ")
+                Text("结束 Loading ")
             }
             
             Spacer()

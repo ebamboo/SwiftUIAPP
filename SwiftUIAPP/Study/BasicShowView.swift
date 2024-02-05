@@ -64,10 +64,12 @@ struct BasicShowView: View {
                 .padding()
                 .frame(height: 80)
 //                .background(.gray) // 设置背景会影响一点点效果，所以把 Text 放在合适的背景上来满足需求；
+                .clipShape(RoundedRectangle(cornerRadius: 20))
                 .overlay {
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.orange, lineWidth: 2)
+                        .stroke(Color.orange, lineWidth: 1)
                 }
+//                .background(.gray)
             
             Group {
                 Text("多属性文本设置")
