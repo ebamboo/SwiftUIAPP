@@ -2,7 +2,7 @@
 //  SegementView.swift
 //  SwiftDemo01
 //
-//  Created by ebamboo on 2024/1/15.
+//  Created by 姚旭 on 2024/1/15.
 //
 
 import SwiftUI

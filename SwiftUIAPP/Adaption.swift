@@ -2,7 +2,7 @@
 //  Adaption.swift
 //  SwiftUIAPP
 //
-//  Created by ebamboo on 2024/1/23.
+//  Created by 姚旭 on 2024/1/23.
 //
 
 import SwiftUI

@@ -2,7 +2,7 @@
 //  AlignmentView.swift
 //  SwiftUIAPP
 //
-//  Created by ebamboo on 2024/1/25.
+//  Created by 姚旭 on 2024/1/25.
 //
 
 import SwiftUI

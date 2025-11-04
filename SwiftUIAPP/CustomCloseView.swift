@@ -2,7 +2,7 @@
 //  CustomCloseView.swift
 //  SwiftUIAPP
 //
-//  Created by ebamboo on 2024/1/28.
+//  Created by 姚旭 on 2024/1/28.
 //
 
 import SwiftUI

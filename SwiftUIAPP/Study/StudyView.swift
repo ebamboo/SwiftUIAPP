@@ -2,7 +2,7 @@
 //  StudyView.swift
 //  SwiftUIAPP
 //
-//  Created by ebamboo on 2024/1/22.
+//  Created by 姚旭 on 2024/1/22.
 //
 
 import SwiftUI
