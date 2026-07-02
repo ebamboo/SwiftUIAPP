@@ -60,16 +60,36 @@ struct BasicShowView: View {
                 .background(.gray)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             
-            Text("同时设置边框和圆角，必须使用 overlay")
-                .padding()
-                .frame(height: 80)
-//                .background(.gray) // 设置背景会影响一点点效果，所以把 Text 放在合适的背景上来满足需求；
+            Text("同时设置 背景+圆角+边框，必须使用 overlay")
+                .frame(width: 300, height: 200)
+                .background(Color(.systemTeal))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .clipped()
+                .overlay {
+                    RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(.red, lineWidth: 2)
+                }
+            Text("标准用法: strokeBorder")
+                .frame(width: 300, height: 200)
+                //.background(Color(.systemGray6))
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .overlay {
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.orange, lineWidth: 1)
+                        .strokeBorder(.red, lineWidth: 2)
                 }
-//                .background(.gray)
+            
+            Text("中心扩散：stroke")
+                .frame(width: 300, height: 200)
+                //.background(Color(.systemGray6))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 20)
+                        // 以边界为中心向两侧延伸作为厚度lineWidth
+                        .stroke(.red, lineWidth: 2)
+                        
+                }
+                // 注释对比效果
+                .clipped()
             
             Group {
                 Text("多属性文本设置")
