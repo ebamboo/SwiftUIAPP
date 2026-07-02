@@ -50,6 +50,7 @@
 		AD91D6AE2B67847200214138 /* CustomToastTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AD2B67847200214138 /* CustomToastTest.swift */; };
 		AD91D6B02B67848200214138 /* WebImageListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AF2B67848200214138 /* WebImageListTest.swift */; };
 		AD91D6B22B67855E00214138 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6B12B67855E00214138 /* QuestionView.swift */; };
+		EA9CEE0E2FF6C1EA008FA9B2 /* AccessWindowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CEE0D2FF6C1EA008FA9B2 /* AccessWindowTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		AD91D6AD2B67847200214138 /* CustomToastTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastTest.swift; sourceTree = "<group>"; };
 		AD91D6AF2B67848200214138 /* WebImageListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageListTest.swift; sourceTree = "<group>"; };
 		AD91D6B12B67855E00214138 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		EA9CEE0D2FF6C1EA008FA9B2 /* AccessWindowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessWindowTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				AD62A9F12B64F1B60050CD93 /* Rotation3DTest.swift */,
 				AD91D6AF2B67848200214138 /* WebImageListTest.swift */,
 				AD91D6AD2B67847200214138 /* CustomToastTest.swift */,
+				EA9CEE0D2FF6C1EA008FA9B2 /* AccessWindowTest.swift */,
 				AD91D6B12B67855E00214138 /* QuestionView.swift */,
 			);
 			path = Experience;
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD02841C2B5E597900382CC0 /* RootView.swift in Sources */,
+				EA9CEE0E2FF6C1EA008FA9B2 /* AccessWindowTest.swift in Sources */,
 				AD8560792B633ECB000798B3 /* OrganizationView.swift in Sources */,
 				AD85606F2B620225000798B3 /* PresentDatePicker.swift in Sources */,
 				AD62A9DA2B639B9C0050CD93 /* TabViewTest.swift in Sources */,

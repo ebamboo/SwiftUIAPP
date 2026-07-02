@@ -23,7 +23,8 @@ struct ExperienceView: View {
         "3D旋转 rotation3DEffect",
         "网络图片列表",
         "实现一个 Toast 工具",
-        "待解决问题或者解决方式不优雅"
+        "SwiftUI 中访问 UIWindow",
+        "待解决问题或者解决方式不优雅",
     ]
     
     var body: some View {
@@ -58,7 +59,8 @@ struct ExperienceView: View {
         case 10: Rotation3DTest()
         case 11: WebImageListTest()
         case 12: CustomToastTest()
-        case 13: QuestionView()
+        case 13: AccessWindowTest()
+        case 14: QuestionView()
         default: EmptyView()
         }
     }
