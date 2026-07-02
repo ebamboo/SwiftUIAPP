@@ -17,7 +17,7 @@ struct GeometryView: View {
                     VStack(spacing: 08) {
                         
                         let text1 = """
-                              主要处理两类问：
+                              geometry 主要解决两类问题：
                               1、按比例分配给子视图空间；
                               2、设置特定子类的宽高比；
                               """
@@ -26,10 +26,8 @@ struct GeometryView: View {
                         
                         let text2 = """
                               1、使用 .aspectRatio(.init(width: 1, height: 4), contentMode: .fit) 来处理等比例视图问题；
-                              其中 size 表示宽高比例；结合 zstack，用 Rectangle()去撑起相应的尺寸；
-                              设置目标视图的 frame 最大值为无限大，把它放入刚才的 zstack 中；
+                              其中 size 表示宽高比例；通过指定宽高比的rect，在其上overlay 目标视图；
                               这个方案比 geometry 更像是 SwiftUI 方式更优雅；
-                              注意：也要保证目标视图不要超过 Rectangle() 撑起的尺寸，不然再次撑大 zstack；
                               """
                         Text(text2)
                             .background(.gray)
@@ -56,20 +54,17 @@ struct GeometryView: View {
                         Text(text5)
                             .background(.gray)
                         
-                        Text("实现一个宽高比为 2:1 动态高度")
+                        Text("通过 geometry 实现一个宽高比为 2:1 动态高度")
                             .frame(width: geometry.size.width, height: geometry.size.width/2)
                             .background(.gray)
                         
-                        ZStack {
-                            Rectangle()
-                                .fill(.orange)
-                                .aspectRatio(.init(width: 2, height: 1), contentMode: .fit)
-                                .overlay {
-                                    Text("2:1")
-                                }
-                                
-                            // 目标视图
-                        }
+                        Rectangle()
+                            .fill(.orange)
+                            .aspectRatio(.init(width: 2, height: 1), contentMode: .fit)
+                            .overlay {
+                                // 目标视图
+                                Text("通过 .aspectRatio 实现一个宽高比为 2:1 动态高度")
+                            }
                         
                         Text("position 会返回一个新的视图，这个视图会占用所有可用空间（它修饰的视图的父视图所能提供的空间），然后才会布局它修饰的视图。")
                             .background(.gray)
