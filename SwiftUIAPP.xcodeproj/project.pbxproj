@@ -50,6 +50,7 @@
 		AD91D6AE2B67847200214138 /* CustomToastTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AD2B67847200214138 /* CustomToastTest.swift */; };
 		AD91D6B02B67848200214138 /* WebImageListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6AF2B67848200214138 /* WebImageListTest.swift */; };
 		AD91D6B22B67855E00214138 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91D6B12B67855E00214138 /* QuestionView.swift */; };
+		EA9C001D2FFD4CB1008FA9B2 /* TextEditorWithPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C001C2FFD4CB1008FA9B2 /* TextEditorWithPlaceholder.swift */; };
 		EA9CEE0E2FF6C1EA008FA9B2 /* AccessWindowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CEE0D2FF6C1EA008FA9B2 /* AccessWindowTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		AD91D6AD2B67847200214138 /* CustomToastTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastTest.swift; sourceTree = "<group>"; };
 		AD91D6AF2B67848200214138 /* WebImageListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageListTest.swift; sourceTree = "<group>"; };
 		AD91D6B12B67855E00214138 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		EA9C001C2FFD4CB1008FA9B2 /* TextEditorWithPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorWithPlaceholder.swift; sourceTree = "<group>"; };
 		EA9CEE0D2FF6C1EA008FA9B2 /* AccessWindowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessWindowTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				AD02841B2B5E597900382CC0 /* RootView.swift */,
 				AD08871E2B60AF2300FD7360 /* TestView.swift */,
 				AD08871C2B60A9A700FD7360 /* BridgeTextEditor.swift */,
+				EA9C001C2FFD4CB1008FA9B2 /* TextEditorWithPlaceholder.swift */,
 				AD08871A2B5FE78B00FD7360 /* Adaption.swift */,
 				AD91D6AB2B673E4D00214138 /* NavigationPush.swift */,
 				AD8560702B622B8B000798B3 /* ImagePickerPage.swift */,
@@ -353,6 +356,7 @@
 				AD02842A2B5E61F300382CC0 /* StudyView.swift in Sources */,
 				AD8560772B625A79000798B3 /* GeometryView.swift in Sources */,
 				AD0284332B5E741A00382CC0 /* TextInputView.swift in Sources */,
+				EA9C001D2FFD4CB1008FA9B2 /* TextEditorWithPlaceholder.swift in Sources */,
 				AD62A9EE2B64E6B40050CD93 /* SharePageTest.swift in Sources */,
 				AD0284312B5E740900382CC0 /* BasicShowView.swift in Sources */,
 				AD08871F2B60AF2300FD7360 /* TestView.swift in Sources */,
