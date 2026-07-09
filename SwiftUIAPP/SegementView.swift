@@ -21,8 +21,8 @@ struct SegementView<Content>: View where Content: View  {
     @ViewBuilder var content: () -> Content
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            ScrollViewReader { proxy in
+        ScrollViewReader { proxy in
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: spacing, content: content)
                     .onChange(of: selectedIndex) { value in
                         withAnimation {
